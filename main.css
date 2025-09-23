@@ -64,8 +64,48 @@ header div {
 .flexbox_container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border-radius: 20px;
-    padding: 20px;
     margin: 20px;
 }
+.flexbox_container_row {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-top: 0px;
+}
+.nav_bar {
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 20px;
+}
+.left {
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.right {
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.posts {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.post {
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 20px;
+}
+
