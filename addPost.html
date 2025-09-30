@@ -8,22 +8,28 @@
   </head>
   <body>
         <div class="flexbox">
-            <div>HEADER</div>
+            <div>
+                <div class="nav_bar">
+                    <a href="index.html">Home</a>
+                    <img src="resources/images/placeholder.png" alt="Account picture" style="width:30px;height:30px">
+                </div>
+            </div>
             <div>
                 <div>
-                    <form action="/">
+                    <form action="/index.html" id=postform>
                         <label for="pbody">
                         Post body
                         </label>
                         <input type="text" name:pbody>
                         <br>
-                        <label for="Select file">
+                        <label>
                             Select file
                         </label>
-                        <input type="button" value="Choose File">
+                        <input type="button" value="Choose File" id="selectfile">
                         <br>
-                        <input type="submit" value="Create post">
+                        <input type="submit" value="Create post" id="submitbutton">
                     </form>
+                </div>
             </div>
         </div>
   </body>

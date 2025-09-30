@@ -6,3 +6,19 @@
     padding: 20px;
     margin: 20px;
 }
+#postform{
+    
+    justify-items: center;
+    background-color: lightgray;
+}
+#submitbutton{
+    background-color: blue;
+    color: white;
+    border-color: transparent;
+    border-radius: 5%;
+}
+
+#selectfile{
+    background-color: gray;
+    color: white;
+}
