@@ -12,6 +12,7 @@ header {
     padding-right: 25px;
     border-radius: 10px;
     margin: 3px;
+    
 }
 
 header div {
@@ -68,14 +69,13 @@ header div {
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 20px;
-    margin: 20px;
 }
 .flexbox_container_row {
     display: flex;
     flex-direction: row;
-    margin: 20px;
     margin-top: 0px;
+    margin-bottom: 10px;
+    justify-content: space-between;
 }
 
 .left {
@@ -83,16 +83,19 @@ header div {
     border-radius: 20px;
     padding: 20px;
     margin-top: 20px;
+    flex: 15%;
 }
 .right {
     background-color: lightgrey;
     border-radius: 20px;
     padding: 20px;
     margin-top: 20px;
+    flex: 15%;
 }
 .posts {
     margin-left: 20px;
     margin-right: 20px;
+    flex: 60%;
 }
 
 .post {
