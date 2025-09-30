@@ -35,8 +35,14 @@ header div {
     margin: 0;
     padding: 0;
     display: flex;
+    gap: 15px;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
+}
+
+li p {
+    margin: 0;
 }
 
 .content-1 form {
@@ -59,4 +65,34 @@ header div {
     margin-top: 15px;
     display: inline-block;
     text-decoration: none;
+}
+
+#welcome > p {
+    color: black;
+    font-weight: bold;
+}
+
+#create-acc {
+    color: darkcyan;
+    font-weight: bold;
+}
+
+.login-form input {
+    border: none;
+}
+
+form + a {
+    position: relative;
+    padding-left: 15px;
+    color: darkcyan;
+    font-weight: bold;
+}
+
+#log-in {
+    font-size: medium;
+    color: white;
+    position: relative;
+    background: darkblue;
+    width: 60%;
+    margin-left: 30px;
 }
