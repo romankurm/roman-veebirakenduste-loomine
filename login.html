@@ -4,36 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
     <header>
-        <p>Home</p>
-        <div class="logo">LOGO GOES HERE</div>
+        <a href="index.html">Home</a>
+        <div class="logo"></div>
     </header>
 
     <div class="content-1">
-        <ul>
-            <li>
-                <p>Welcome to PostIt</p>
-            </li>
-            <li>
-                <p>Create an account</p>
-            </li>
-            <li>
-                <p>or</p>
-            </li>
-            <li>
-                <p>Please log in</p>
-            </li>
-        </ul>
+        <div class="form-content">
 
-        <form class="login-form">
-            <input type="text" id="email" name="email" placeholder="Email" required>
-            <input type="text" id="password" name="password" placeholder="Password" required>
-            <input type="submit" id="log-in" name="logi-in" value="Log in">
-        </form>
-        <p>Forget Password</p>
+            <ul>
+                <li id="welcome">
+                    <p>Welcome to PostIt</p>
+                </li>
+                <li>
+                    <p id="create-acc">Create an account</p>
+                </li>
+                <li>
+                    <p>or</p>
+                </li>
+                <li>
+                    <p>Please log in</p>
+                </li>
+            </ul>
+
+            <form class="login-form">
+                <input type="text" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="password" name="password" placeholder="Password" required>
+                <input type="submit" id="log-in" name="log-in" value="Log in">
+            </form>
+            <a href="index.html">Forget Password</a>
+
+        </div>
 
     </div>
     
