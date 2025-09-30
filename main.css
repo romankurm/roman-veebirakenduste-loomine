@@ -10,6 +10,8 @@ header {
     justify-content: space-between;
     padding-left: 25px;
     padding-right: 25px;
+    border-radius: 10px;
+    margin: 3px;
 }
 
 header div {
@@ -20,6 +22,7 @@ header div {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 
 .content-1 {
@@ -74,11 +77,7 @@ header div {
     margin: 20px;
     margin-top: 0px;
 }
-.nav_bar {
-    background-color: lightgrey;
-    border-radius: 20px;
-    padding: 20px;
-}
+
 .left {
     background-color: lightgrey;
     border-radius: 20px;
