@@ -140,9 +140,25 @@ form + a {
     width: 60%;
     margin-left: 30px;
 }
-=======
 .footer {
     background-color: lightgrey;
     border-radius: 20px;
     padding: 20px;
+    margin: 20px;
+}
+#postform{
+    
+    justify-items: center;
+    background-color: lightgray;
+}
+#submitbutton{
+    background-color: blue;
+    color: white;
+    border-color: transparent;
+    border-radius: 5%;
+}
+
+#selectfile{
+    background-color: gray;
+    color: white;
 }
