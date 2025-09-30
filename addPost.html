@@ -15,13 +15,13 @@
         <div class="flexbox">
             <div>
                 <div>
-                    <form action="/index.html" id=postform>
-                        <label for="pbody">
+                    <form action="index.html" id=postform>
+                        <label for="pbody" id="pbodytext">
                         Post body
                         </label>
-                        <input type="text" name:pbody>
+                        <textarea id="pbody" placeholder="textarea"></textarea>
                         <br>
-                        <label>
+                        <label id="selection" for="selectfile">
                             Select file
                         </label>
                         <input type="button" value="Choose File" id="selectfile">
