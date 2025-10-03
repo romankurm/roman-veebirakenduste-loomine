@@ -199,3 +199,50 @@ form + a {
     padding-right: 20px;
     margin-bottom: 10px;
 }
+.footer {
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+#postform{
+    margin-top: 50px;
+    background-color: lightgray;
+    border-radius: 8px;
+    width: 250px;
+    height: 220px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+#submitbutton{
+    background-color: darkblue;
+    color: white;
+    border-color: transparent;
+    border-radius: 5%;
+    margin-top: 40px;
+    margin-left: 25%;
+    width: 125px;
+    height: 25px;
+}
+
+#selectfile{
+    background-color: gray;
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 130px;
+    height: 25px;
+}
+
+#pbody{
+    height:100px;
+    width: 160px;
+    resize: none;
+    margin-left: 5px;
+    font-size: large;
+}
+#pbodytext{
+    vertical-align: top;
+}

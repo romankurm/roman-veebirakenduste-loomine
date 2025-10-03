@@ -13,22 +13,22 @@
         <img src="resources/images/placeholder.png" alt="Account picture" style="width:30px;height:30px">
     </header>
         <div class="flexbox">
-            
             <div>
                 <div>
-                    <form action="/">
-                        <label for="pbody">
+                    <form action="index.html" id=postform>
+                        <label for="pbody" id="pbodytext">
                         Post body
                         </label>
-                        <input type="text" name:pbody>
+                        <textarea id="pbody" placeholder="textarea"></textarea>
                         <br>
-                        <label for="Select file">
+                        <label id="selection" for="selectfile">
                             Select file
                         </label>
-                        <input type="button" value="Choose File">
+                        <input type="button" value="Choose File" id="selectfile">
                         <br>
-                        <input type="submit" value="Create post">
+                        <input type="submit" value="Create post" id="submitbutton">
                     </form>
+                </div>
             </div>
         </div>
   </body>
