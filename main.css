@@ -1,29 +1,44 @@
-
-html, body {
-    height: 100%;
+body{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
     margin: 0;
+    padding: 10px;
 }
 
 header {
-    background-color: gray;
+    background-color: lightgray;
     display: flex;
-    justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 10px;
-    margin: 3px;
-    
+    align-items: center;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    width:inherit;
 }
 
-header div {
-    transform: translateY(5px);
-    width: 45px;
-    height: 40px;
-    background-image: url(resources/images/placeholder.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
+header nav {
+    margin-right: auto;
+}
+
+header nav > a:link {
+    color: black;
+    text-decoration: none;
+    border-right: solid 1px;
+    padding-right: 3px;
+}
+
+header nav > a:link:last-of-type {
+    border-right: none;
+}
+
+header nav > a:hover{
+    background-color: lightcyan;
+}
+
+header img{
+    height:35px;
+    width: 35px;
 }
 
 .content-1 {
@@ -71,44 +86,63 @@ li p {
     display: inline-block;
     text-decoration: none;
 }
-.flexbox_container {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-}
+
 .flexbox_container_row {
     display: flex;
     flex-direction: row;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap:20px;
 }
 
-.left {
+aside {
     background-color: lightgrey;
     border-radius: 20px;
-    padding: 20px;
-    margin-top: 20px;
-    flex: 15%;
+    min-width: 50px;
+    max-width: 200px;
+    flex-grow: 1;
 }
-.right {
-    background-color: lightgrey;
-    border-radius: 20px;
-    padding: 20px;
-    margin-top: 20px;
-    flex: 15%;
-}
-.posts {
-    margin-left: 20px;
-    margin-right: 20px;
-    flex: 60%;
+
+.posts_container {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    flex-grow: 1;
+    gap:10px;
+    
 }
 
 .post {
+    display: flex;
     background-color: lightgrey;
     border-radius: 20px;
-    padding: 20px;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    gap:5px;
+}
+
+.post div:first-child{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    flex-grow: 1;
+    width: 100%;
+}
+.post div img {
+    height:30px;
+    width: 30px;
+}
+.post img{
+    width: 100%;
+}
+.post img:last-child{
+    height:30px;
+    width: 30px;
 }
 
 div img:first-child { /*Profile picture*/
@@ -154,12 +188,19 @@ form + a {
     width: 60%;
     margin-left: 30px;
 }
+
 .footer {
     background-color: lightgrey;
     border-radius: 20px;
-    padding: 20px;
-    margin: 20px;
+    height: 50px;
+    width:inherit;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
 }
+
 #postform{
     margin-top: 50px;
     background-color: lightgray;
