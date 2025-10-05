@@ -36,7 +36,7 @@ header nav > a:hover{
     background-color: lightcyan;
 }
 
-header img{
+header nav~img{
     height:35px;
     width: 35px;
 }
