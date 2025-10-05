@@ -145,20 +145,6 @@ aside {
     width: 30px;
 }
 
-div img:first-child { /*Profile picture*/
-    width:20px;
-    height:20px;
-}
-
-div img:last-child { /*Like button*/
-    width:20px;
-    height:20px;
-}
-
-img~p {
-    align-self: start;
-}
-
 #welcome > p {
     color: black;
     font-weight: bold;
