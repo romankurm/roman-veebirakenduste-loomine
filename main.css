@@ -98,8 +98,9 @@ aside {
     background-color: lightgrey;
     border-radius: 20px;
     min-width: 50px;
-    max-width: 200px;
+    max-width: 300px;
     flex-grow: 1;
+    flex-basis: 300px;
 }
 
 .posts_container {
@@ -184,7 +185,6 @@ form + a {
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 10px;
 }
 
 #postform{
