@@ -1,0 +1,16 @@
+[
+  {
+    "AccountName": "Kaspar",
+    "AccountPicture": "resources/images/profile.png",
+    "PostDate": "Oct 22, 2022",
+    "PostImage": "resources/images/placeholder.png",
+    "PostText": "Tartu 2022"
+  },
+  {
+    "AccountName": "Kaspar",
+    "AccountPicture": "resources/images/profile.png",
+    "PostDate": "Oct 22, 2022",
+    "PostImage": "resources/images/placeholder.png",
+    "PostText": "Tartu 2022"
+  }
+]
