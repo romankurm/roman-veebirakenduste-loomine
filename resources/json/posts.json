@@ -1,0 +1,72 @@
+[
+  {
+    "accountName": "Kaspar",
+    "accountPicture": "resources/images/profile.png",
+    "postDate": "Oct 22, 2022",
+    "postImage": "resources/images/placeholder.png",
+    "postText": "Tartu 2022"
+  },
+  {
+    "accountName": "Toomas",
+    "accountPicture": "resources/images/profile.png",
+    "postDate": "Oct 30, 2022",
+    "postImage": null,
+    "postText": "Lorem ipsum dolor sit amet."
+  },
+  {
+    "accountName": "Julio",
+    "accountPicture": "resources/images/profile.png",
+    "postDate": "Nov 1, 2022",
+    "postImage": null,
+    "postText": "Lorem ipsum dolor sit amet consectetur adipiscing elit."
+  },
+  {
+    "accountName": "Pablo",
+    "accountPicture": "resources/images/profile.png",
+    "postDate": "Jan 3, 2023",
+    "postImage": "resources/images/placeholder.png",
+    "postText": "Tartu 2022"
+  },
+  {
+    "accountName": "Tiina",
+    "accountPicture": "resources/images/profile.png",
+    "postDate": "Feb 20, 2023",
+    "postImage": null,
+    "postText": "In id cursus mi pretium tellus duis"
+  },
+  {
+    "accountName": "Fred",
+    "accountPicture": "resources/images/profile.png",
+    "postDate": "Jun 19, 2023",
+    "postImage": "resources/images/placeholder.png",
+    "postText": "Tartu 2023"
+  },
+  {
+    "accountName": "Alice",
+    "accountPicture": "resources/images/profile.png",
+    "postDate": "Aug 9, 2023",
+    "postImage": null,
+    "postText": "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id."
+  },
+  {
+    "accountName": "Ülle",
+    "accountPicture": "resources/images/profile.png",
+    "postDate": "Mar 22, 2024",
+    "postImage": null,
+    "postText": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.\n\nLorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+  },
+  {
+    "accountName": "Homer",
+    "accountPicture": "resources/images/profile.png",
+    "postDate": "Oct 11, 2025",
+    "postImage": "resources/images/placeholder.png",
+    "postText": "Tartu 2025"
+  },
+  {
+    "accountName": "Bart",
+    "accountPicture": "resources/images/profile.png",
+    "postDate": "Oct 21, 2025",
+    "postImage": null,
+    "postText": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+  }
+]
