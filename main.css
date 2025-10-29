@@ -228,3 +228,40 @@ form + a {
 #pbodytext{
     vertical-align: top;
 }
+
+.account-info{
+    position: relative;
+}
+
+.account-info img{
+    height:35px;
+    width: 35px;
+}
+
+.dropdown {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    right:0;
+    border-radius: 5%;
+    background-color: rgb(238, 238, 238);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: max-content;
+    text-align: left;
+}
+
+.dropdown p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.account-info{
+    background-color: pink;
+}
+/**
+.account-info:hover .dropdown, .dropdown:hover {
+    display: block;
+}
+**/
+

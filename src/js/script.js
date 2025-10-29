@@ -1,4 +1,6 @@
 window.onload = function() {
+    
+    //this.document.getElementsByClassName("account-info").onclick = displayAccountInfo;
     fetch('/resources/json/posts.json')
         .then((response) => response.json())
         .then(json => {
@@ -43,4 +45,10 @@ window.onload = function() {
         })
 
 
+}
+
+function displayAccountInfo()
+{
+    console.log("asdasdasd");
+    document.getElementByClassName("dropdown").style.visibility="visible";
 }
