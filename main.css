@@ -95,12 +95,15 @@ li p {
 }
 
 aside {
-    background-color: lightgrey;
+    background-color: lightgray;
     border-radius: 20px;
     min-width: 50px;
     max-width: 300px;
     flex-grow: 1;
     flex-basis: 300px;
+}
+#indexbody {
+    background-color: black;
 }
 
 .posts_container {
@@ -114,7 +117,7 @@ aside {
 
 .post {
     display: flex;
-    background-color: lightgrey;
+    background-color: lightpink;
     border-radius: 20px;
     flex-direction: column;
     align-items: flex-start;
@@ -144,6 +147,13 @@ aside {
 .post img:last-child{
     height:30px;
     width: 30px;
+}
+.post_date{
+    font-size: large;
+    text-decoration: underline;
+}
+.post_text{
+    font-size: x-large;
 }
 
 #welcome > p {
@@ -265,3 +275,10 @@ form + a {
 }
 **/
 
+.like-button {
+    transition: transform 0.3s ease-in-out;
+}
+
+.like-button:hover {
+    transform: scale(1.2);
+}
