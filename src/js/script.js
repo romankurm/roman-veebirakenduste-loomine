@@ -1,4 +1,6 @@
 window.onload = function() {
+    
+    //this.document.getElementsByClassName("account-info").onclick = displayAccountInfo;
     // fetch('https://www.jsonkeeper.com/b/X1TBT') with online JSON storage
     fetch('/resources/json/posts.json')
         .then((response) => response.json())
@@ -47,4 +49,10 @@ window.onload = function() {
         })
 
 
+}
+
+function displayAccountInfo()
+{
+    console.log("asdasdasd");
+    document.getElementByClassName("dropdown").style.visibility="visible";
 }
