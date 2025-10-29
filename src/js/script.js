@@ -12,6 +12,7 @@ window.onload = function() {
                 accountpicture.src = json[item].accountPicture;
                 let postdate = document.createElement("p");
                 postdate.innerText = json[item].postDate;
+                postdate.className="post_date";
                 upperbound.appendChild(accountpicture);
                 upperbound.appendChild(postdate);
                 article.appendChild(upperbound);
@@ -22,6 +23,7 @@ window.onload = function() {
                 }
                 let posttext = document.createElement("p");
                 posttext.innerText = json[item].postText;
+                posttext.className = 'post_text';
                 article.appendChild(posttext);
                 let likebutton = document.createElement("img");
                 likebutton.src = "resources/images/like.png";
