@@ -3,26 +3,26 @@ window.onload = function() {
         .then((response) => response.json())
         .then(json => {
             console.log(json);
-            for (item in json){
+            for (let i=json.length-1; i>=0; i--){
                 let article = document.createElement("article");
                 article.className="post";
                 let upperbound = document.createElement("div");
                 upperbound.className="flex_right"
                 let accountpicture = document.createElement("img");
-                accountpicture.src = json[item].accountPicture;
+                accountpicture.src = json[i].accountPicture;
                 let postdate = document.createElement("p");
-                postdate.innerText = json[item].postDate;
+                postdate.innerText = json[i].postDate;
                 postdate.className="post_date";
                 upperbound.appendChild(accountpicture);
                 upperbound.appendChild(postdate);
                 article.appendChild(upperbound);
-                if(!(json[item].postImage == (null))){
+                if(!(json[i].postImage == (null))){
                     let postimage = document.createElement("img");
-                    postimage.src = json[item].postImage;
+                    postimage.src = json[i].postImage;
                     article.appendChild(postimage);
                 }
                 let posttext = document.createElement("p");
-                posttext.innerText = json[item].postText;
+                posttext.innerText = json[i].postText;
                 posttext.className = 'post_text';
                 article.appendChild(posttext);
                 let likebutton = document.createElement("img");
