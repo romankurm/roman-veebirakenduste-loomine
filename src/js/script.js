@@ -1,5 +1,6 @@
 window.onload = function() {
-    fetch('/resources/json/posts.json')
+    // fetch('https://www.jsonkeeper.com/b/X1TBT') with online JSON storage
+    fetch('https://www.jsonkeeper.com/b/X1TBT')
         .then((response) => response.json())
         .then(json => {
             console.log(json);
@@ -25,6 +26,7 @@ window.onload = function() {
                 article.appendChild(posttext);
                 let likebutton = document.createElement("img");
                 likebutton.src = "resources/images/like.png";
+                likebutton.className = "like-button";
                 article.appendChild(likebutton);
                 document.getElementsByClassName("posts_container")[0].append(article);
             }
