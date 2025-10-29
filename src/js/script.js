@@ -1,6 +1,6 @@
 window.onload = function() {
     // fetch('https://www.jsonkeeper.com/b/X1TBT') with online JSON storage
-    fetch('https://www.jsonkeeper.com/b/X1TBT')
+    fetch('/resources/json/posts.json')
         .then((response) => response.json())
         .then(json => {
             console.log(json);
