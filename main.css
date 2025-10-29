@@ -238,3 +238,11 @@ form + a {
 #pbodytext{
     vertical-align: top;
 }
+
+.like-button {
+    transition: transform 0.3s ease-in-out;
+}
+
+.like-button:hover {
+    transform: scale(1.2);
+}
