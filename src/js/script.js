@@ -5,6 +5,7 @@ window.onload = function() {
     })
     
     if (this.document.getElementsByClassName("posts_container")[0] != null){
+    // fetch('https://www.jsonkeeper.com/b/X1TBT') with online JSON storage
         fetch('/resources/json/posts.json')
             .then((response) => response.json())
             .then(json => {
@@ -18,6 +19,7 @@ window.onload = function() {
                     accountpicture.src = json[i].accountPicture;
                     let postdate = document.createElement("p");
                     postdate.innerText = json[i].postDate;
+                postdate.className="post_date";
                     upperbound.appendChild(accountpicture);
                     upperbound.appendChild(postdate);
                     article.appendChild(upperbound);
@@ -28,9 +30,11 @@ window.onload = function() {
                     }
                     let posttext = document.createElement("p");
                     posttext.innerText = json[i].postText;
+                posttext.className = 'post_text';
                     article.appendChild(posttext);
                     let likebutton = document.createElement("img");
                     likebutton.src = "resources/images/like.png";
+                likebutton.className = "like-button";
                     article.appendChild(likebutton);
                     document.getElementsByClassName("posts_container")[0].append(article);
                 }
