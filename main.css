@@ -229,39 +229,27 @@ form + a {
     vertical-align: top;
 }
 
-.account-info{
+.account-info-container{
     position: relative;
 }
 
-.account-info img{
+.account-info-container img{
     height:35px;
     width: 35px;
 }
 
-.dropdown {
+.account-info-container span {
     display: block;
-    visibility: hidden;
+    visibility: visible;
     position: absolute;
     right:0;
     border-radius: 5%;
     background-color: rgb(238, 238, 238);
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding:10px;
     width: max-content;
     text-align: left;
 }
-
-.dropdown p {
-    margin-top: 10px;
-    margin-bottom: 0px;
+.account-info-container span p {
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
-.account-info{
-    background-color: pink;
-}
-/**
-.account-info:hover .dropdown, .dropdown:hover {
-    display: block;
-}
-**/
-
