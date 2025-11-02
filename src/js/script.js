@@ -10,7 +10,7 @@ window.onload = function() {
             path = path.substring(1);
         }
         root = path.substring(0, path.indexOf('/')) + '/';
-        json_local_path = root + 'resources/json/posts.json'
+        json_local_path = 'resources/json/posts.json'
 
         //fetch('https://www.jsonkeeper.com/b/X1TBT')
         fetch(json_local_path)
