@@ -6,7 +6,7 @@ window.onload = function() {
     
     if (this.document.getElementsByClassName("posts_container")[0] != null){
         path = window.location.pathname;
-        if(path.split('/') > 1){
+        if(path.split('/').length > 1){
             path = path.substring(1);
         }
         root = path.substring(0, path.indexOf('/')) + '/';
