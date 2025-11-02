@@ -6,6 +6,8 @@ window.onload = function() {
     
     if (this.document.getElementsByClassName("posts_container")[0] != null){
         //fetch('https://www.jsonkeeper.com/b/X1TBT')
+        console.log(window.location);
+        console.log(window.location.pathname);
         fetch('/resources/json/posts.json')
             .then((response) => response.json())
             .then(json => {
@@ -13,7 +15,7 @@ window.onload = function() {
                     let article = document.createElement("article");
                     article.className="post";
                     let upperbound = document.createElement("div");
-                    upperbound.className="flex_right"
+                    upperbound.className="flex_right";
                     let accountpicture = document.createElement("img");
                     accountpicture.src = json[i].accountPicture;
                     let postdate = document.createElement("p");
