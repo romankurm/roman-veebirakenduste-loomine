@@ -5,11 +5,10 @@ window.onload = function() {
     })
     
     if (this.document.getElementsByClassName("posts_container")[0] != null){
-    // fetch('https://www.jsonkeeper.com/b/X1TBT') with online JSON storage
-        fetch('/resources/json/posts.json')
+        fetch('https://www.jsonkeeper.com/b/X1TBT')
+        //fetch('/resources/json/posts.json')
             .then((response) => response.json())
             .then(json => {
-                console.log(json);
                 for (let i=json.length-1; i>=0; i--){
                     let article = document.createElement("article");
                     article.className="post";
@@ -25,6 +24,7 @@ window.onload = function() {
                     article.appendChild(upperbound);
                     if(!(json[i].postImage == (null))){
                         let postimage = document.createElement("img");
+                        postimage.alt = "Image not found";
                         postimage.src = json[i].postImage;
                         article.appendChild(postimage);
                     }
@@ -44,12 +44,6 @@ window.onload = function() {
                 errDiv.className = 'post';
                 errDiv.innerText = err;
                 document.body.appendChild(errDiv);
-            })
-            .finally(() => {
-                //let footer = document.createElement("footer");
-                //date = new Date().toLocaleString()
-                //footer.innerText = date;
-                //document.body.appendChild(footer);
             })}
 
 
@@ -60,7 +54,6 @@ function displayAccountInfo() {
     if (dropdown == null){
         dropdown = createAccountInfoDropdown();
     }
-    console.log(dropdown);
     if (dropdown.style["visibility"] != "visible"){
         dropdown.style["visibility"] = "visible";
     } else {
