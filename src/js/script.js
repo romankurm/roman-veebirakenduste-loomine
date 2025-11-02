@@ -5,8 +5,15 @@ window.onload = function() {
     })
     
     if (this.document.getElementsByClassName("posts_container")[0] != null){
+        path = window.location.pathname;
+        if(path.split('/').length > 1){
+            path = path.substring(1);
+        }
+        root = path.substring(0, path.indexOf('/')) + '/';
+        json_local_path = 'resources/json/posts.json'
+
         //fetch('https://www.jsonkeeper.com/b/X1TBT')
-        fetch('/resources/json/posts.json')
+        fetch(json_local_path)
             .then((response) => response.json())
             .then(json => {
                 for (let i=json.length-1; i>=0; i--){
@@ -15,7 +22,7 @@ window.onload = function() {
                     let upperbound = document.createElement("div");
                     upperbound.className="flex_right";
                     let accountpicture = document.createElement("img");
-                    accountpicture.src = json[i].accountPicture;
+                    accountpicture.src = root + json[i].accountPicture;
                     let postdate = document.createElement("p");
                     postdate.innerText = json[i].postDate;
                     postdate.className="post_date";
@@ -25,7 +32,7 @@ window.onload = function() {
                     if(!(json[i].postImage == (null))){
                         let postimage = document.createElement("img");
                         postimage.alt = "Image not found";
-                        postimage.src = json[i].postImage;
+                        postimage.src = root + json[i].postImage;
                         article.appendChild(postimage);
                     }
                     let posttext = document.createElement("p");
@@ -33,7 +40,7 @@ window.onload = function() {
                     posttext.className = 'post_text';
                     article.appendChild(posttext);
                     let likebutton = document.createElement("img");
-                    likebutton.src = "resources/images/like.png";
+                    likebutton.src = root + "resources/images/like.png";
                     likebutton.className = "like-button";
                     article.appendChild(likebutton);
                     document.getElementsByClassName("posts_container")[0].append(article);
