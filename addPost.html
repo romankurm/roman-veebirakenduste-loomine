@@ -7,7 +7,7 @@
     <title>My Dashboard</title>
     <link rel="stylesheet" href="main.css">
   </head>
-  <body>
+  <body id = "indexbody">
     <header>
         <nav>
             <a href="index.html">Home</a>
@@ -16,24 +16,20 @@
             <img id = "dropdown-button" src="resources/images/profile.png" alt="Account picture">
         </div>
     </header>
-        <div class="flexbox">
-            <div>
-                <div>
-                    <form action="index.html" id=postform>
-                        <label for="pbody" id="pbodytext">
-                        Post body
-                        </label>
-                        <textarea id="pbody" placeholder="textarea"></textarea>
-                        <br>
-                        <label id="selection" for="selectfile">
-                            Select file
-                        </label>
-                        <input type="button" value="Choose File" id="selectfile">
-                        <br>
-                        <input type="submit" value="Create post" id="submitbutton">
-                    </form>
-                </div>
-            </div>
+        <div class="flexbox_container">
+            <form action="index.html" id=postform>
+                <label for="pbody" id="pbodytext">
+                Post body
+                </label>
+                <textarea id="pbody" placeholder="textarea"></textarea>
+                <br>
+                <label id="selection" for="selectfile">
+                    Select file
+                </label>
+                <input type="button" value="Choose File" id="selectfile">
+                <br>
+                <input type="submit" value="Create post" id="submitbutton">
+            </form>
         </div>
   </body>
 </html>
