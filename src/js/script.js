@@ -5,10 +5,15 @@ window.onload = function() {
     })
     
     if (this.document.getElementsByClassName("posts_container")[0] != null){
+        path = window.location.pathname;
+        if(path.split('/') > 1){
+            path = path.substring(1);
+        }
+        root = path.substring(0, path.indexOf('/')) + '/';
+        json_local_path = root + 'resources/json/posts.json'
+
         //fetch('https://www.jsonkeeper.com/b/X1TBT')
-        console.log(window.location);
-        console.log(window.location.pathname);
-        fetch('/resources/json/posts.json')
+        fetch(json_local_path)
             .then((response) => response.json())
             .then(json => {
                 for (let i=json.length-1; i>=0; i--){
@@ -17,26 +22,26 @@ window.onload = function() {
                     let upperbound = document.createElement("div");
                     upperbound.className="flex_right";
                     let accountpicture = document.createElement("img");
-                    accountpicture.src = json[i].accountPicture;
+                    accountpicture.src = root + json[i].accountPicture;
                     let postdate = document.createElement("p");
                     postdate.innerText = json[i].postDate;
-                postdate.className="post_date";
+                    postdate.className="post_date";
                     upperbound.appendChild(accountpicture);
                     upperbound.appendChild(postdate);
                     article.appendChild(upperbound);
                     if(!(json[i].postImage == (null))){
                         let postimage = document.createElement("img");
                         postimage.alt = "Image not found";
-                        postimage.src = json[i].postImage;
+                        postimage.src = root + json[i].postImage;
                         article.appendChild(postimage);
                     }
                     let posttext = document.createElement("p");
                     posttext.innerText = json[i].postText;
-                posttext.className = 'post_text';
+                    posttext.className = 'post_text';
                     article.appendChild(posttext);
                     let likebutton = document.createElement("img");
-                    likebutton.src = "resources/images/like.png";
-                likebutton.className = "like-button";
+                    likebutton.src = root + "resources/images/like.png";
+                    likebutton.className = "like-button";
                     article.appendChild(likebutton);
                     document.getElementsByClassName("posts_container")[0].append(article);
                 }
