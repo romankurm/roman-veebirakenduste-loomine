@@ -5,8 +5,8 @@ window.onload = function() {
     })
     
     if (this.document.getElementsByClassName("posts_container")[0] != null){
-        fetch('https://www.jsonkeeper.com/b/X1TBT')
-        //fetch('/resources/json/posts.json')
+        //fetch('https://www.jsonkeeper.com/b/X1TBT')
+        fetch('/resources/json/posts.json')
             .then((response) => response.json())
             .then(json => {
                 for (let i=json.length-1; i>=0; i--){
