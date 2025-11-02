@@ -5,12 +5,13 @@ window.onload = function() {
     })
     
     if (this.document.getElementsByClassName("posts_container")[0] != null){
-        path = window.location.pathname;
+        //path = window.location.pathname;
+        path = '/roman-veebirakenduste-loomine/index.html';
         if(path.split('/').length > 1){
             path = path.substring(1);
         }
         root = path.substring(0, path.indexOf('/')) + '/';
-        json_local_path = root + 'resources/json/posts.json'
+        json_local_path = 'resources/json/posts.json'
 
         //fetch('https://www.jsonkeeper.com/b/X1TBT')
         fetch(json_local_path)
