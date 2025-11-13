@@ -1,28 +1,18 @@
 <template>
-  <div>
-    <h1>Count: {{ count }}</h1>
-    <h2>Double: {{ doubleCount }}</h2>
-    <button @click="increment">Increment</button>
-    <button @click="incrementAsync">Increment Async</button>
-  </div>
+  <h1>{{ message }}</h1>
+  <button @click="changeMessage">Click Me</button>
 </template>
 
 <script>
 export default {
-  computed: {
-    count() {
-      return this.$store.state.count
-    },
-    doubleCount() {
-      return this.$store.getters.doubleCount
+  data() {
+    return {
+      message: 'Hello from Vue + Vite!'
     }
   },
   methods: {
-    increment() {
-      this.$store.commit('increment')
-    },
-    incrementAsync() {
-      this.$store.dispatch('incrementAsync')
+    changeMessage() {
+      this.message = 'Updated message!'
     }
   }
 }
