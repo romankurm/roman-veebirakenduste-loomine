@@ -1,7 +1,6 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/products">Products</router-link> |
+    <router-link to="/">Main</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
   <router-view/>
@@ -14,6 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: lightgray;
+  border-radius: 20px;
+  height: 50px;
 }
 
 nav {
@@ -28,4 +30,6 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+
 </style>
