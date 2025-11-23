@@ -6,18 +6,15 @@
     </div>
     <side-compo></side-compo>
   </div>
-  <footer-compo></footer-compo>
 </template>
 
 <script>
 import PostCompo from "@/components/Post.vue";
-import FooterCompo from "@/components/Footer.vue";
 import SideCompo from "@/components/Side.vue";
 export default {
   name: 'MainView',
   components: {
     PostCompo,
-    FooterCompo,
     SideCompo
   },
   data: function() {
