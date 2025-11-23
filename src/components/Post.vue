@@ -22,7 +22,7 @@ export default {
             return require(`../assets/like.png`);
         },
         postsList(){
-            return this.$store.getters.postsList;
+            return this.$store.getters.postsList.reverse();
         },
     },
     methods: {
