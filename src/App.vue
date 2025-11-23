@@ -1,8 +1,5 @@
 <template>
-  <nav>
-    <router-link to="/">Main</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <header-compo></header-compo>
   
   <router-view/>
   <footer-compo></footer-compo>
@@ -10,6 +7,7 @@
 </template>
 
 <script>
+  import HeaderCompo from '@/components/Header.vue'
   import FooterCompo from '@/components/Footer.vue';
   export default {
     data() {
@@ -18,7 +16,8 @@
       };
     },
     components: {
-      FooterCompo
+      FooterCompo,
+      HeaderCompo
     },
     mounted() {
       fetch('http://localhost:3000/posts')
