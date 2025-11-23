@@ -17,6 +17,7 @@ export default createStore({
                         postImage: post.postImage,
                         postText: post.postText,
                         id: post.id,
+                        likes: post.likes,
                     }
                 });
                 return postsList;

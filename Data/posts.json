@@ -4,70 +4,80 @@
     "accountPicture": "assets/profile.png",
     "postDate": "Oct 22, 2022",
     "postImage": "assets/placeholder.png",
-    "postText": "Tartu 2022"
+    "postText": "Tartu 2022",
+    "likes": 0
   },
   {
     "accountName": "Toomas",
     "accountPicture": "assets/profile.png",
     "postDate": "Oct 30, 2022",
     "postImage": null,
-    "postText": "Lorem ipsum dolor sit amet."
+    "postText": "Lorem ipsum dolor sit amet.",
+    "likes": 0
   },
   {
     "accountName": "Julio",
     "accountPicture": "assets/profile.png",
     "postDate": "Nov 1, 2022",
     "postImage": null,
-    "postText": "Lorem ipsum dolor sit amet consectetur adipiscing elit."
+    "postText": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+    "likes": 0
   },
   {
     "accountName": "Pablo",
     "accountPicture": "assets/profile.png",
     "postDate": "Jan 3, 2023",
     "postImage": "assets/placeholder.png",
-    "postText": "Tartu 2022"
+    "postText": "Tartu 2022",
+    "likes": 0
   },
   {
     "accountName": "Tiina",
     "accountPicture": "assets/profile.png",
     "postDate": "Feb 20, 2023",
     "postImage": null,
-    "postText": "In id cursus mi pretium tellus duis"
+    "postText": "In id cursus mi pretium tellus duis",
+    "likes": 0
   },
   {
     "accountName": "Fred",
     "accountPicture": "assets/profile.png",
     "postDate": "Jun 19, 2023",
     "postImage": "assets/placeholder.png",
-    "postText": "Tartu 2023"
+    "postText": "Tartu 2023",
+    "likes": 0
   },
   {
     "accountName": "Alice",
     "accountPicture": "assets/profile.png",
     "postDate": "Aug 9, 2023",
     "postImage": null,
-    "postText": "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id."
+    "postText": "Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id.",
+    "likes": 0
   },
   {
     "accountName": "Ülle",
     "accountPicture": "assets/profile.png",
     "postDate": "Mar 22, 2024",
     "postImage": null,
-    "postText": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.\n\nLorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+    "postText": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.\n\nLorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
+    "likes": 0
   },
   {
     "accountName": "Homer",
     "accountPicture": "assets/profile.png",
     "postDate": "Oct 11, 2025",
     "postImage": "assets/placeholder.png",
-    "postText": "Tartu 2025"
+    "postText": "Tartu 2025",
+    "likes": 0
   },
   {
     "accountName": "Bart",
     "accountPicture": "assets/profile.png",
     "postDate": "Oct 21, 2025",
     "postImage": null,
-    "postText": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+    "postText": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
+    "likes": 0
   }
 ]
 }
