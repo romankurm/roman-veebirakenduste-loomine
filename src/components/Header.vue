@@ -2,8 +2,9 @@
     <header>
         <nav>
             <router-link to="/">Main</router-link> |
-            <router-link to="/about">About</router-link>
-        </nav>
+            <router-link to="/about">About</router-link> |
+            <router-link to="/login">Login</router-link>
+        </nav> 
     </header>
 </template>
 
