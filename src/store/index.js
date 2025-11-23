@@ -27,9 +27,14 @@ export default createStore({
         setData(state, newData) {
             state.postList = newData;
         },
+        increaseLikes: state => {
+            state.postList.forEach(product => {
+                product.price += 1;
+            })
+        },
         
     },
   actions: {
-    
+
     }
 })

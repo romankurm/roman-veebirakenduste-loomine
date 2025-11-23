@@ -6,7 +6,7 @@
         </div>
         <img v-if="post.postImage != null" :src='postImagePath(post.postImage)' alt="Posted picture">
         <p class = "post_text" v-text="post.postText"></p>
-        <img :src='likeButtonImagePath' alt="Like button">
+      <button v-on:click="increaseLike" icon="likeButtonImagePath()" Like post> </button>
     </article>
 </template>
 
@@ -29,8 +29,11 @@ export default {
         accountPicturePath: function(path){
             return require(`../${path}`);
         },
-        postImagePath: function(path){
+        postImagePath: functi on(path){
             return require(`../${path}`);
+        },
+        increaseLike: function(path){
+          this.$store.commit("increaseLikes")
         }
     }
     
