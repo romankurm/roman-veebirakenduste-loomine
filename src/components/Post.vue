@@ -1,11 +1,10 @@
 <template>
-    <article class = "post" v-for="post in postList">
+    <article class = "post" v-for="post in postsList">
         <div>
-            <img :src='accountPicturePath(post.accountPicture)' alt="Account picture">
+            <img v-if="post.accountPicture != null" :src='accountPicturePath(post.accountPicture)' alt="Account picture">
             <p class= "post_date" v-text="post.postDate"></p>
         </div>
-        
-        <img :src='postImagePath(post.postImage)' alt="Posted picture">
+        <img v-if="post.postImage != null" :src='postImagePath(post.postImage)' alt="Posted picture">
         <p class = "post_text" v-text="post.postText"></p>
         <img :src='likeButtonImagePath' alt="Like button">
     </article>
@@ -15,13 +14,15 @@
 <script>
 export default {
     name: "Post",
-    props: ["postList"],
     data: () => {
     return {
     }},
     computed: {
         likeButtonImagePath() {
             return require(`../assets/like.png`);
+        },
+        postsList(){
+            return this.$store.getters.postsList;
         },
     },
     methods: {
@@ -32,6 +33,7 @@ export default {
             return require(`../${path}`);
         }
     }
+    
 }
 </script>
 

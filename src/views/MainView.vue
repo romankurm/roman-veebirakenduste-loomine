@@ -2,7 +2,7 @@
   <div class = "flexbox_container_row">
     <side-compo></side-compo>
     <div class="posts_container">
-      <post-compo :postList="postList"/>
+      <post-compo></post-compo>
     </div>
     <side-compo></side-compo>
   </div>
@@ -21,13 +21,7 @@ export default {
     SideCompo
   },
   data: function() {
-  return {
-  postList:[
-  {accountName: "Kaspar", accountPicture: "assets/profile.png", postDate: "Oct 22, 2022", postImage: "assets/placeholder.png", postText: "Tartu 2020"},
-  {accountName: "Kaspar", accountPicture: "assets/profile.png", postDate: "Oct 22, 2022", postImage: "assets/placeholder.png", postText: "Tartu 2020"},
-  {accountName: "Kaspar", accountPicture: "assets/profile.png", postDate: "Oct 22, 2022", postImage: "assets/placeholder.png", postText: "Tartu 2020"},
-  
-  ]}},
+  return {}},
 }
 </script>
 
@@ -48,3 +42,5 @@ export default {
 }
 
 </style>
+
+

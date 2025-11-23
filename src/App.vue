@@ -6,6 +6,26 @@
   <router-view/>
 </template>
 
+<script>
+  export default {
+    data() {
+      return {
+        postList: []
+      };
+    },
+    mounted() {
+      fetch('http://localhost:3000/posts')
+        .then(response => response.json())
+        .then(data => {
+          this.$store.commit("setData", data);
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    }
+  };
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
