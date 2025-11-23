@@ -28,9 +28,15 @@ export default createStore({
         setData(state, newData) {
             state.postList = newData;
         },
-        increaseLikes: state => {
-            state.postList.forEach(product => {
-                product.price += 1;
+            increaseLikes(state, postId) {
+                const post = state.postList.find(post => post.id === postId)
+                if(post)
+                    post.likes++
+            },
+        decreaseLikes(state) {
+
+            state.postList.forEach(post => {
+                post.likes = 0;
             })
         },
         

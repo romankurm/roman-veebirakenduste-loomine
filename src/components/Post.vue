@@ -6,8 +6,16 @@
         </div>
         <img v-if="post.postImage != null" :src='postImagePath(post.postImage)' alt="Posted picture">
         <p class = "post_text" v-text="post.postText"></p>
-      <button v-on:click="increaseLike" icon="likeButtonImagePath()" Like post> </button>
+        <div>
+          <button v-on:click="increaseLike(post.id)" class="like-background">
+            <img :src="likeButtonImagePath" class="like-button">
+          </button>
+          <p class= "likes"> {{post.likes}} likes</p>
+        </div>
     </article>
+    <button v-on:click="decreaseLike()" class="like-background">
+      <img :src="likeButtonImagePath" class="dislike-button">
+    </button>
 </template>
 
 
@@ -29,11 +37,14 @@ export default {
         accountPicturePath: function(path){
             return require(`../${path}`);
         },
-        postImagePath: functi on(path){
+        postImagePath: function(path){
             return require(`../${path}`);
         },
-        increaseLike: function(path){
-          this.$store.commit("increaseLikes")
+        increaseLike: function(postId){
+          this.$store.commit("increaseLikes", postId)
+        },
+        decreaseLike: function(){
+          this.$store.commit("decreaseLikes")
         }
     }
     
@@ -54,6 +65,15 @@ article {
     gap:5px;
 }
 article div:first-child{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:center;
+  flex-grow: 1;
+  width: 100%;
+}
+article div:last-child{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -61,6 +81,7 @@ article div:first-child{
     align-items:center;
     flex-grow: 1;
     width: 100%;
+    font-size: x-large;
 }
 article div img {
     height:30px;
@@ -79,5 +100,28 @@ article img:last-child{
 }
 .post_text{
     font-size: x-large;
+}
+.like-background{
+  background: transparent;
+  border:none;
+}
+.like-button {
+  transition: transform 0.3s ease-in-out;
+  background: transparent;
+  border: none;              /* remove borders */
+  padding: 0;                /* remove extra space */
+  cursor: pointer;           /* show pointer on hover */
+  outline: none;
+  appearance: none;
+}
+
+.like-button:hover {
+  transform: scale(1.2);
+}
+.dislike-button{
+  transform: rotate(180deg);
+  filter: invert(100%);
+  max-width: 40px;
+  max-height: 40px;
 }
 </style>
