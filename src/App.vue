@@ -3,15 +3,22 @@
     <router-link to="/">Main</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
+  
   <router-view/>
+  <footer-compo></footer-compo>
+  
 </template>
 
 <script>
+  import FooterCompo from '@/components/Footer.vue';
   export default {
     data() {
       return {
         postList: []
       };
+    },
+    components: {
+      FooterCompo
     },
     mounted() {
       fetch('http://localhost:3000/posts')
