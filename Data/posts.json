@@ -1,5 +1,6 @@
 { "posts": [
   {
+    "id": 0,
     "accountName": "Kaspar",
     "accountPicture": "assets/profile.png",
     "postDate": "Oct 22, 2022",
@@ -8,6 +9,7 @@
     "likes": 0
   },
   {
+    "id": 1,
     "accountName": "Toomas",
     "accountPicture": "assets/profile.png",
     "postDate": "Oct 30, 2022",
@@ -16,6 +18,7 @@
     "likes": 0
   },
   {
+    "id": 2,
     "accountName": "Julio",
     "accountPicture": "assets/profile.png",
     "postDate": "Nov 1, 2022",
@@ -24,6 +27,7 @@
     "likes": 0
   },
   {
+    "id": 3,
     "accountName": "Pablo",
     "accountPicture": "assets/profile.png",
     "postDate": "Jan 3, 2023",
@@ -32,6 +36,7 @@
     "likes": 0
   },
   {
+    "id": 4,
     "accountName": "Tiina",
     "accountPicture": "assets/profile.png",
     "postDate": "Feb 20, 2023",
@@ -40,6 +45,7 @@
     "likes": 0
   },
   {
+    "id": 5,
     "accountName": "Fred",
     "accountPicture": "assets/profile.png",
     "postDate": "Jun 19, 2023",
@@ -48,6 +54,7 @@
     "likes": 0
   },
   {
+    "id": 6,
     "accountName": "Alice",
     "accountPicture": "assets/profile.png",
     "postDate": "Aug 9, 2023",
@@ -56,6 +63,7 @@
     "likes": 0
   },
   {
+    "id": 7,
     "accountName": "Ülle",
     "accountPicture": "assets/profile.png",
     "postDate": "Mar 22, 2024",
@@ -64,6 +72,7 @@
     "likes": 0
   },
   {
+    "id": 8,
     "accountName": "Homer",
     "accountPicture": "assets/profile.png",
     "postDate": "Oct 11, 2025",
@@ -72,6 +81,7 @@
     "likes": 0
   },
   {
+    "id": 9,
     "accountName": "Bart",
     "accountPicture": "assets/profile.png",
     "postDate": "Oct 21, 2025",

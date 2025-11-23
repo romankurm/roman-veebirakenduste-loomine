@@ -11,12 +11,12 @@ export default createStore({
         postsList: state => {
         var postsList = state.postList.map(post => {
                     return {
+                        id: post.id,
                         accountName: post.accountName,
                         accountPicture: post.accountPicture,
                         postDate: post.postDate,
                         postImage: post.postImage,
                         postText: post.postText,
-                        id: post.id,
                         likes: post.likes,
                     }
                 });
