@@ -46,7 +46,7 @@ export default {
     },
   }, 
   mounted() {
-        fetch('https://jsonplaceholder.typicode.com/posts')
+        fetch('http://localhost:3000/api/posts')
         .then((response) => response.json())
         .then(data => this.posts = data)
         .catch(err => console.log(err.message))
