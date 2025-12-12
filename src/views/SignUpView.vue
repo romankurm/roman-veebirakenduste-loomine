@@ -36,7 +36,7 @@ export default {
         }
     },
     methods: {
-        checkForm: function (e) {
+        checkForm: function () {
 
             this.errors = [];
 
@@ -60,7 +60,9 @@ export default {
                 this.errors.push('Password must start with uppercase A-Z.');
             }
 
-            e.preventDefault();
+            if (this.errors.length == 0){
+                this.$router.push("/")
+            }
         }
     }
 }

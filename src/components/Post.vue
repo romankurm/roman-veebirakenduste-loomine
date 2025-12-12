@@ -30,7 +30,7 @@ export default {
             return require(`../assets/like.png`);
         },
         postsList(){
-            return this.$store.getters.postsList.reverse();
+            return this.$store.getters.postsList.slice().reverse();
         },
     },
     methods: {

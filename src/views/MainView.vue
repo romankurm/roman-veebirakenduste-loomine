@@ -28,6 +28,7 @@ export default {
     flex-direction: column;
     min-width: 150px;
     flex-grow: 1;
+    flex-basis: 900px;
     gap:10px;
 }
 
