@@ -1,14 +1,12 @@
-# vuejs-ii
+# WAD-lab13-frontend
 
-## Project setup (edited)
+## Project setup
 ```
 npm install
-npm install json-server                         
 ```
 
-### Compiles and hot-reloads for development (edited)
+### Compiles and hot-reloads for development
 ```
-npx json-server --watch Data/posts.json 
 npm run serve
 ```
 
