@@ -1,12 +1,14 @@
 # vuejs-ii
 
-## Project setup
+## Project setup (edited)
 ```
 npm install
+npm install json-server                         
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for development (edited)
 ```
+npx json-server --watch Data/posts.json 
 npm run serve
 ```
 
