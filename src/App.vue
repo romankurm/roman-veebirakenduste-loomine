@@ -1,12 +1,20 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-<!--     <router-link to="/signup">SignUp</router-link> | -->
-<!--     <router-link to="/login">LogIn</router-link> | -->
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <header-compo></header-compo>
+  
+  <router-view/>
+  <footer-compo></footer-compo>
+  
 </template>
+<script>
+  import HeaderCompo from '@/components/Header.vue'
+  import FooterCompo from '@/components/Footer.vue';
+  export default {
+    components: {
+      FooterCompo,
+      HeaderCompo
+    }
+  }
+</script>
 
 <style>
 #app {
@@ -15,6 +23,9 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: lightgray;
+  border-radius: 20px;
+  height: 50px;
 }
 
 nav {
@@ -29,4 +40,6 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+
 </style>
