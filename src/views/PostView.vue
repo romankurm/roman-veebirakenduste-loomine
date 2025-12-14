@@ -3,7 +3,7 @@
         <h2>A post</h2>
         <div class="centerHorizontally">
         <label class = "postLabel" for="postBody">Body </label>
-        <textarea id="postBody" name="postBody" class="textField">{{ post.b }}</textarea>
+        <textarea id="postBody" name="postBody" class="textField">{{ post.body }}</textarea>
         </div>
         <div class = "buttons">
             <button @click="EditPost">Update</button>
