@@ -1,5 +1,5 @@
 <template>
-    <article class = "post" v-for="post in postsList">
+    <article @click="editPost(post.id)" class = "post" v-for="post in postsList">
         <div>
             <img v-if="post.accountPicture != null" :src='accountPicturePath(post.accountPicture)' alt="Account picture">
             <p class= "post_date" v-text="post.title"></p>
@@ -26,6 +26,13 @@ export default {
     return {
     postsList:[ ]
     }
+  },
+  methods: { 
+    editPost(id){
+      this.$router.push(`/post/edit/${id}`)
+    }
+
+    
   },
   mounted() {
       fetch('http://localhost:3000/api/posts')
