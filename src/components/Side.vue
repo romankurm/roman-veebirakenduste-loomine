@@ -14,7 +14,7 @@ return {
 
 <style scoped>
 aside {
-    background-color: lightgray;
+    background-color: #35d8f9;
     border-radius: 20px;
     min-width: 50px;
     max-width: 300px;

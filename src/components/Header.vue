@@ -2,10 +2,7 @@
     <header>
         <nav>
             <router-link to="/">Main</router-link> |
-            <router-link to="/signup">SignUp</router-link> |
-            <router-link to="/login">Login</router-link> |
-            <router-link to="/about">Contacts</router-link> |
-            <router-link to="/newPost">New Post</router-link>
+            <router-link to="/about">Contacts</router-link>
         </nav> 
     </header>
 </template>
@@ -22,7 +19,7 @@ return {
 
 <style scoped>
 header {
-    background-color: lightgray;
+    background-color: #35d8f9;
     display: flex;
     align-items: center;
     justify-content: center;
