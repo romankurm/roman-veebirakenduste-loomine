@@ -30,19 +30,17 @@ LogIn() {
         email: this.email,
         password: this.password
       };
-      // using Fetch - post method - send an HTTP post request to the specified URI with the defined body
       fetch("http://localhost:3000/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-          credentials: 'include', //  Don't forget to specify this if you need cookies
+          credentials: 'include',
           body: JSON.stringify(data),
       })
       .then((response) => response.json())
       .then((data) => {
       console.log(data);
-      //this.$router.push("/");
       location.assign("/");
       })
       .catch((e) => {

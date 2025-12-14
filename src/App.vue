@@ -29,27 +29,7 @@
   background-color: lightgray;
   border-radius: 20px;
   height: 50px;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-
-.footerExtra {
-  min-height: 100%;
-  position: relative;
-}
-.body {
-  padding-bottom: 60px;
+  min-width: 300px;
 }
 
 </style>

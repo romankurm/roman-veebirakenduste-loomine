@@ -26,7 +26,7 @@
             }
         },
         mounted() {
-            fetch(`http://localhost:3000/api/posts/${this.id}`)
+            fetch(`http://localhost:3000/api/posts/${this.id}`, {method: 'get',credentials: 'include'})
             .then((response) => response.json())
             .then(data => this.post = data)
             .catch(err => console.log(err.message))
@@ -43,7 +43,6 @@
                 var data = {
                     body: document.getElementById("postBody").value
                 };
-                console.log(data)
                 await fetch(`http://localhost:3000/api/posts/${this.id}`, {
                     method: "PUT",
                     headers: {

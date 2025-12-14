@@ -40,15 +40,13 @@ export default {
   methods: {
     Logout() {
       fetch("http://localhost:3000/auth/logout", {
-          credentials: 'include', //  Don't forget to specify this if you need cookies
+          credentials: 'include',
       })
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
         console.log('jwt removed');
-        //console.log('jwt removed:' + auth.authenticated());
         this.$router.push("/login");
-        //location.assign("/");
       })
       .catch((e) => {
         console.log(e);
@@ -59,7 +57,7 @@ export default {
       this.$router.push('newPost')
     },
     async deleteAll() {
-      await fetch('http://localhost:3000/api/posts/', {method: 'delete'})
+      await fetch('http://localhost:3000/api/posts/', {method: 'delete', credentials: 'include'})
       .then(() => this.status = 'Delete successful')
       .catch(err => console.log(err.message));
       this.postKey += 1;
@@ -71,7 +69,6 @@ export default {
 <style scoped>
 
 button{
-  margin-top: 30px;
   border-radius: 36px;
   background: #FEE996;
   border:0;
@@ -93,11 +90,10 @@ button{
   display: flex;
   justify-content: center;
 }
-
 .posts_container {
     display: flex;
     flex-direction: column;
-    min-width: 150px;
+    min-width: 195px;
     flex-grow: 1;
     gap:10px;
 }
@@ -110,8 +106,10 @@ button{
 }
 .buttons{
   display: flex;
-  flex-direction: row;
+  flex-direction: wrap;
   justify-content:space-between;
+  width:inherit;
+  flex-grow: 1;
   gap: 20px
 }
 </style>

@@ -28,11 +28,7 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
     font-size: small;
-    justify-content: space-between;
-    position: absolute;
-    bottom:0;
-    right:0;
-    left:0;
+    justify-content: space-between
 
 }
 </style>

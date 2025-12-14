@@ -65,17 +65,6 @@ article div:last-child{
     width: 100%;
     font-size: x-large;
 }
-article div img {
-    height:30px;
-    width: 30px;
-}
-article img{
-    width: 100%;
-}
-article img:last-child{
-    height:30px;
-    width: 30px;
-}
 .post_date{
     font-size: larger;
     text-decoration: underline;

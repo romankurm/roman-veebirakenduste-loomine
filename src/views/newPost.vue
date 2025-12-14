@@ -10,15 +10,12 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import auth from "../auth";
 export default {
   name: "newPost",
   components: {},
   data: function() {
     return {
       posts:[ ],
-      authResult: auth.authenticated()
     }
   },
   methods: {
@@ -29,32 +26,28 @@ export default {
         day: "numeric",
         year: "numeric"
       });
-      if(document.getElementById("postBody").value!=""){
-        var data = {
-          title: "",
-          date: dateNowString,
-          body: document.getElementById("postBody").value
-        };
-        console.log(this.postBody)
-        // using Fetch - post method - send an HTTP post request to the specified URI with the defined body
-        fetch("http://localhost:3000/api/posts", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          credentials: 'include', //  Don't forget to specify this if you need cookies
-          body: JSON.stringify(data),
-        })
-            .then((data) => {
-              console.log(data);
-              //this.$router.push("/");
-              location.assign("/");
-            })
-            .catch((e) => {
-              console.log(e);
-              console.log("error");
-            });
-      }
+      console.log(dateNowString);
+      var data = {
+        date: dateNowString,
+        body: document.getElementById("postBody").value,
+      };
+      console.log(data);
+      fetch("http://localhost:3000/api/posts", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        credentials: 'include',
+        body: JSON.stringify(data),
+      })
+          .then((data) => {
+            console.log(data);
+            location.assign("/");
+          })
+          .catch((e) => {
+            console.log(e);
+            console.log("error");
+          });
     },
   }
 };
