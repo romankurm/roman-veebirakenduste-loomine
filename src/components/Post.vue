@@ -2,7 +2,7 @@
     <article @click="editPost(post.id)" class = "post" v-for="post in postsList">
         <div>
             <img v-if="post.accountPicture != null" :src='accountPicturePath(post.accountPicture)' alt="Account picture">
-            <p class= "post_date" v-text="post.title"></p>
+            <p class= "post_date" v-text="post.date"></p>
         </div>
         <img v-if="post.postImage != null" :src='postImagePath(post.postImage)' alt="Posted picture">
         <p class = "post_text" v-text="post.body"></p>
@@ -56,8 +56,8 @@ article div:first-child{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items:center;
+  justify-content: right;
+  align-items:flex-end;
   flex-grow: 1;
   width: 100%;
 }
