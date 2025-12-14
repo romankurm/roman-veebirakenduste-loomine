@@ -25,7 +25,7 @@ export default {
 
   },
   mounted() {
-      fetch('http://localhost:3000/api/posts/')
+      fetch('http://localhost:3000/api/posts/', {credentials: 'include'})
       .then((response) => response.json())
       .then(data => this.postsList = data)
       .catch(err => console.log(err.message))

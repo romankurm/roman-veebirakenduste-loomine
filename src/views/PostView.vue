@@ -1,6 +1,6 @@
 <template>
     <div v-if="post" class = "form">
-        <h2>A post</h2>
+        <h2>Add post</h2>
         <div class="centerHorizontally">
         <label class = "postLabel" for="postBody">Body </label>
         <textarea id="postBody" name="postBody" class="textField"> </textarea>
@@ -17,14 +17,12 @@
 </template>
 
 <script>
-    import auth from "../auth";
     export default {
         name: "PostView",
         props:['id'],
         data(){
             return {
                 post: null,
-                authResult: auth.authenticated(),
             }
         },
         mounted() {
@@ -36,21 +34,13 @@
         methods: {
             
             async DeletePost() {
-                await fetch(`http://localhost:3000/api/posts/${this.id}`, {method: 'delete'})
+                await fetch(`http://localhost:3000/api/posts/${this.id}`, {method: 'delete', credentials: 'include'})
                 .then(() => {this.status = 'Delete successful';})
                 .catch(err => console.log(err.message));
                 location.assign("/");
             },
             async EditPost() {
-                let dateNowString = new Date(Date.now()).toLocaleDateString("en-US", {
-                    month: "long",
-                    day: "numeric",
-                    year: "numeric"
-                });
-                console.log(dateNowString)
                 var data = {
-                    title: "Title",
-                    date: dateNowString,
                     body: document.getElementById("postBody").value
                 };
                 console.log(data)
@@ -59,17 +49,14 @@
                     headers: {
                         "Content-Type": "application/json",
                     },
-                    credentials: 'include', //  Don't forget to specify this if you need cookies
+                    credentials: 'include',
                     body: JSON.stringify(data),
                     })
-                    .then((data) => {
-                    console.log(data);
-                    //this.$router.push("/");
+                    .then(() => {
                     location.assign("/");
                     })
                     .catch((e) => {
                     console.log(e);
-                    console.log("error");
                     });
             }
         }
