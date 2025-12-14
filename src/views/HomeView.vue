@@ -5,7 +5,15 @@
   <div class = "flexbox_container_row">
     <side-compo></side-compo>
     <div class="posts_container">
-      <post-compo></post-compo>
+      <post-compo :key="postKey" />
+      <div class = "buttons">
+        <button v-on:click="addPost()">
+          ADD POST
+        </button>
+        <button v-on:click="deleteAll()">
+          DELETE ALL
+        </button>
+      </div>
     </div>
     <side-compo></side-compo>
   </div>
@@ -25,7 +33,8 @@ export default {
    data: function() {
     return {
     posts:[ ],
-    authResult: auth.authenticated()
+    authResult: auth.authenticated(),
+    postKey: 0
     }
   },
   methods: {
@@ -46,6 +55,18 @@ export default {
         console.log("error logout");
       });
     },
+    addPost() {
+      this.$router.push('post/newPost')
+    },
+    deleteAll() {
+      fetch('http://localhost:3000/api/posts/', {method: 'delete'})
+      .then(() => this.status = 'Delete successful')
+      .catch(err => console.log(err.message));
+      this.forceRender();
+    },
+    forceRender() {
+      this.postKey += 1;
+    }
   }
 };
 </script>
@@ -89,5 +110,11 @@ button{
     flex-direction: row;
     flex-wrap: nowrap;
     gap:20px;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  gap: 20px
 }
 </style>

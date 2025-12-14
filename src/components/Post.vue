@@ -13,9 +13,6 @@
           <p class= "likes"> {{post.likes}} likes</p>
         </div>
     </article>
-    <button v-on:click="decreaseLike()" class="like-background">
-      <img :src="likeButtonImagePath" class="dislike-button">
-    </button>
 </template>
 
 
@@ -30,12 +27,11 @@ export default {
   methods: { 
     editPost(id){
       this.$router.push(`/post/edit/${id}`)
-    }
-
+    },
     
   },
   mounted() {
-      fetch('http://localhost:3000/api/posts')
+      fetch('http://localhost:3000/api/posts/')
       .then((response) => response.json())
       .then(data => this.postsList = data)
       .catch(err => console.log(err.message))
