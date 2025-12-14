@@ -29,30 +29,32 @@ export default {
         day: "numeric",
         year: "numeric"
       });
-      console.log(dateNowString)
-      var data = {
-        title: "",
-        date: dateNowString,
-        body: this.postBody
-      };
-      // using Fetch - post method - send an HTTP post request to the specified URI with the defined body
-      fetch("http://localhost:3000/api/posts", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        credentials: 'include', //  Don't forget to specify this if you need cookies
-        body: JSON.stringify(data),
-      })
-          .then((data) => {
-            console.log(data);
-            //this.$router.push("/");
-            location.assign("/");
-          })
-          .catch((e) => {
-            console.log(e);
-            console.log("error");
-          });
+      if(document.getElementById("postBody").value!=""){
+        var data = {
+          title: "",
+          date: dateNowString,
+          body: document.getElementById("postBody").value
+        };
+        console.log(this.postBody)
+        // using Fetch - post method - send an HTTP post request to the specified URI with the defined body
+        fetch("http://localhost:3000/api/posts", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          credentials: 'include', //  Don't forget to specify this if you need cookies
+          body: JSON.stringify(data),
+        })
+            .then((data) => {
+              console.log(data);
+              //this.$router.push("/");
+              location.assign("/");
+            })
+            .catch((e) => {
+              console.log(e);
+              console.log("error");
+            });
+      }
     },
   }
 };

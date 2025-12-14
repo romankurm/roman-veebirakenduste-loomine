@@ -56,7 +56,7 @@ export default {
       });
     },
     addPost() {
-      this.$router.push('post/newPost')
+      this.$router.push('newPost')
     },
     async deleteAll() {
       await fetch('http://localhost:3000/api/posts/', {method: 'delete'})

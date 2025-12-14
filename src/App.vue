@@ -1,8 +1,11 @@
 <template>
-  <header-compo></header-compo>
-  
-  <router-view/>
-  <footer-compo></footer-compo>
+  <div class="footerExtra">
+    <div class="body">
+      <header-compo></header-compo>
+      <router-view/>
+    </div>
+    <footer-compo></footer-compo>
+  </div>
   
 </template>
 <script>
@@ -41,5 +44,12 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 
+.footerExtra {
+  min-height: 100%;
+  position: relative;
+}
+.body {
+  padding-bottom: 60px;
+}
 
 </style>
