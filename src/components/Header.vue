@@ -22,7 +22,7 @@ return {
 
 <style scoped>
 header {
-    background-color: lightgray;
+    background-color: #35d8f9;
     display: flex;
     align-items: center;
     justify-content: center;

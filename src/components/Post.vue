@@ -6,12 +6,6 @@
         </div>
         <img v-if="post.postImage != null" :src='postImagePath(post.postImage)' alt="Posted picture">
         <p class = "post_text" v-text="post.body"></p>
-        <div>
-          <button v-on:click="increaseLike(post.id)" class="like-background">
-            <img :src="likeButtonImagePath" class="like-button">
-          </button>
-          <p class= "likes"> {{post.likes}} likes</p>
-        </div>
     </article>
 </template>
 
@@ -41,16 +35,16 @@ export default {
 
 <style scoped>
 article {
-    display: flex;
-    background-color: lightpink;
-    border-radius: 20px;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 15px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 15px;
-    gap:5px;
+  display: flex;
+  background-color: rgba(43, 254, 233, 0.57);
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  gap:5px;
 }
 article div:first-child{
   display: flex;
@@ -83,33 +77,10 @@ article img:last-child{
     width: 30px;
 }
 .post_date{
-    font-size: large;
+    font-size: larger;
     text-decoration: underline;
 }
 .post_text{
     font-size: x-large;
-}
-.like-background{
-  background: transparent;
-  border:none;
-}
-.like-button {
-  transition: transform 0.3s ease-in-out;
-  background: transparent;
-  border: none;              /* remove borders */
-  padding: 0;                /* remove extra space */
-  cursor: pointer;           /* show pointer on hover */
-  outline: none;
-  appearance: none;
-}
-
-.like-button:hover {
-  transform: scale(1.2);
-}
-.dislike-button{
-  transform: rotate(180deg);
-  filter: invert(100%);
-  max-width: 40px;
-  max-height: 40px;
 }
 </style>
