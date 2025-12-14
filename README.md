@@ -1,4 +1,4 @@
-# WAD-lab13-frontend
+# Frontend GROUP AK
 
 ## Project setup
 ```
