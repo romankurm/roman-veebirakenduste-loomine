@@ -34,7 +34,7 @@ export default {
     return {
     posts:[ ],
     authResult: auth.authenticated(),
-    postKey: 0
+    postKey: 0,
     }
   },
   methods: {
@@ -58,15 +58,12 @@ export default {
     addPost() {
       this.$router.push('post/newPost')
     },
-    deleteAll() {
-      fetch('http://localhost:3000/api/posts/', {method: 'delete'})
+    async deleteAll() {
+      await fetch('http://localhost:3000/api/posts/', {method: 'delete'})
       .then(() => this.status = 'Delete successful')
       .catch(err => console.log(err.message));
-      this.forceRender();
-    },
-    forceRender() {
       this.postKey += 1;
-    }
+    },
   }
 };
 </script>
