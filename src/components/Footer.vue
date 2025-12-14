@@ -17,7 +17,7 @@ return {
 
 <style scoped>
 footer {
-    background-color: lightgrey;
+    background-color: #35d8f9;
     border-radius: 20px;
     height: 50px;
     width:inherit;

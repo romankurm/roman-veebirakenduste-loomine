@@ -2,7 +2,7 @@
   <div class="about">
     <h1>Contact Us</h1>
     <a>Our email: </a><a href="https://www.ouremail@gmail.com"><img src="https://www.citypng.com/public/uploads/preview/hd-letter-email-round-blue-icon-transparent-png-70175169503463700jpjirgdw.png" alt = "Link to email" width = 28 height = 28></a><br>
-    <a>Our Twitter: </a><a href="https://x.com/100PercentMikey">https://x.com/100PercentMikey</a>
+    <a>Our Twitter: </a><a href="https://x.com">https://x.com</a>
   </div>
 </template>
 
