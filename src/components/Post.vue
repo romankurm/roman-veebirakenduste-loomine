@@ -26,9 +26,9 @@ export default {
   },
   methods: { 
     editPost(id){
-      this.$router.push(`/post/edit/${id}`)
+      this.$router.push(`/post/${id}`)
     },
-    
+
   },
   mounted() {
       fetch('http://localhost:3000/api/posts/')

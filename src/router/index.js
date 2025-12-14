@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import SignUp from "../views/SignUp.vue";
 import LogIn from "../views/LogIn.vue";
 import auth from "../auth";
+import PostView from "@/views/PostView.vue";
 
 
 
@@ -31,6 +32,20 @@ const routes = [{
         component: LogIn,
     },
     {
+        path: "/post/:id",
+        name: "PostView",
+        component: PostView,
+        props: true,
+        beforeEnter: async(to, from, next) => {
+            let authResult = await auth.authenticated();
+            if (!authResult) {
+                next('/login')
+            } else {
+                next();
+            }
+        }
+    },
+    {
         path: "/about",
         name: "about",
         // route level code-splitting
@@ -48,15 +63,7 @@ const routes = [{
         component: () =>
             import ( /* webpackChunkName: "about" */ "../views/AboutView.vue"),
     },
-    {
-        path: "/edit",
-        name: "edit",
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () =>
-            import ( /* webpackChunkName: "about" */ "../views/AboutView.vue"),
-    },
+    
 ];
 
 const router = createRouter({
